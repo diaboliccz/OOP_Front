@@ -5,19 +5,16 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Comment } from "./Comment";
 import ViewCart from './components/ViewCart';
 import ContactUs from './components/Contact';
-import Card from './components/pages/Hotel';
-import HotelSrivanna from './components/pages/Srivanna';
-import Logins from './components/pages/Sign-Up';
-import Regis from './components/pages/Regis';
+import Cards from './components/Cards';
+import LoginForm from './components/Login';
+import RegisterFrom from './components/Register';
 import {AddCart} from './AddCart';
 import Navbar from './components/Navbar';
-import HotelView from './components/HotelSrivanna';
+import HotelView from './components/HotelPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
   <React.StrictMode>
-    
     <Router>
         <Navbar/>
         <Routes>
@@ -25,10 +22,10 @@ root.render(
           <Route path="/comment" element={<Comment />} /> 
           <Route path='/Cart' element={<ViewCart/>} /> 
           <Route path='/contact' element={<ContactUs/>} />
-          <Route path='/hotels' element={<Card/>} />
-          <Route path='/sign-up'element={<Logins/>} />
-          <Route path='/register'element={<Regis/>} />
-          <Route path='/addcart'element={<AddCart/>} />
+          <Route path='/hotels' element={<Cards/>} />
+          <Route path='/sign-up'element={<LoginForm/>} />
+          <Route path='/register'element={<RegisterFrom/>} />
+          {/* <Route path='/addcart'element={<AddCart/>} /> */}
           <Route path='/view_hotel'element={<HotelView/>} />
         </Routes>
       </Router>

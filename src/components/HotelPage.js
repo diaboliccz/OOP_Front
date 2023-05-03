@@ -1,8 +1,6 @@
-import './HotelSrivanna.css';
-import { useEffect, useState } from "react";
+import './HotelPage.css';
 import '../App.css'
-import { FaChild } from "react-icons/fa";
-import { FaCheck } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import { FaBed } from "react-icons/fa";
 import './Cards.css';
 import CartItem from './CartCardItem';

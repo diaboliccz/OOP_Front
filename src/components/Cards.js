@@ -2,9 +2,7 @@ import React from 'react';
 import Axios from "axios";
 import './Cards.css';
 import CardItem from './CardItem';
-import JasonData from './TestData.json'
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
 import "../App.css";
 
 
